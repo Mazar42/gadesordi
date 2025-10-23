@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* fonts */
+
+$main-font:'Poppins', sans-serif;
+
+/* colors */
+
+$primary-color: #293D7C;
+$secondary-color : #87caf7;
+$tertiary-color: #C3DDF4;
+$footer-bgc: #242626;
+$header-color: rgb(255, 255, 255);
+
+$lightened-tertiary: lighten($tertiary-color, 5%);
+$lightened-secondary: lighten($secondary-color, 5%);
+$lightened-primary:lighten($primary-color, 5%);
+
+$button-color:  $primary-color;
+$lightened-button-color: $lightened-primary;
+
+$rdv-button-color : $primary-color;
+$active-rdv-button-color: $lightened-primary;

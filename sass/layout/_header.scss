@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: $header-color;
+    top: 0;
+    z-index: 2;
+    padding: 15px 15px 0px 15px; 
+    box-shadow: 0px 5px 5px 0px $header-color;
+
+    .logo{
+        padding: 10px;
+        max-width: 95px;
+    }
+}
+
+.hide-nav{
+    overflow: hidden;
+}
+
+
+@media all and (min-width : 950px){
+
+        header{
+            margin-bottom: 0px;
+
+            .logo{
+                width: 200px;
+                padding: 10px 0px 0px 25px;
+            }
+        }
+}

@@ -1,0 +1,136 @@
+/* mobile navbar */
+
+.navbar-links{
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: $header-color;
+    transition: all .5s;
+    
+
+    li{
+
+        a{
+            display: block;
+            padding: 1rem;
+            transition: all .1s;
+            white-space: nowrap;
+        }
+    }
+}
+
+.display-navbar{
+    display: flex;
+    width: 100%;
+    transition: all .5s;
+}
+
+ /* toggle menu */
+
+.burger{
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: $footer-bgc;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+.cancel-bar .bar{
+    width: 0;
+    background: transparent;
+}
+
+.bar::before, .bar::after{
+    content: "";
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    background: $footer-bgc;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+.bar::before{
+    transform: translateY(-12px);
+}
+
+.cancel-bar .bar::before{
+    transform: rotate(45deg);
+}
+
+.bar::after{
+    transform: translateY(12px);
+}
+
+.cancel-bar .bar::after{
+    transform: rotate(-45deg);
+}
+
+
+
+@media all and (min-width : 950px){
+
+        .navbar-links{
+            display: flex;
+            flex-direction: row;
+            position: sticky;
+            width: 50%;
+            height: fit-content;
+            background-color: transparent;
+
+            
+            li{
+                a{
+                    margin: 20px;
+                    padding: 10px;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        width: 0;
+                        height: 3px;
+                        background: $tertiary-color;
+                        position: absolute;
+                        bottom: 1px;
+                        left: 50%;
+                        transform: translate(-50%);
+                        }
+
+                    &:hover{
+
+                        &::after{
+                        content: '';
+                        width: 80%;
+                        height: 3px;
+                        background: $tertiary-color;
+                        position: absolute;
+                        bottom: 1px;
+                        left: 50%;
+                        transform: translate(-50%);
+                        transition: width .2s;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        .burger{
+            display: none;
+        }
+}

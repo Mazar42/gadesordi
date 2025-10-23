@@ -1,0 +1,65 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    color: white;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 15px;
+    font-size: large;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+p{
+    padding: 10px;
+    font-weight: 400;
+}
+
+li{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+button{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#consultation{
+    h3{
+        color: $primary-color;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (min-width : 950px){
+    h1{
+        font-size: 2.2rem;
+        margin-bottom: 70px;
+    }
+
+    button{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    #consultation{
+         .session-card-container{
+             font-size: 1.3rem;
+
+             
+         }
+    }
+}

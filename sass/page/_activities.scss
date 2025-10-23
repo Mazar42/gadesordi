@@ -1,0 +1,69 @@
+.activities-page{
+    h1{
+        margin: 30px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.join-us{
+
+    .join-us-card{
+        text-align: center;
+
+        p{
+            margin-bottom: 15px;
+        }
+    }
+
+    .odd-card{
+        background-color: $lightened-tertiary;  
+    }
+
+    .even-card{
+        background-color: $lightened-secondary;
+    }
+}
+
+.join-us-btn-container{
+    text-align: center;
+
+    .join-us-btn{
+        width: 75%;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media all and (min-width : 950px){
+
+    .join-us{
+        display: flex;
+
+        .join-us-card{
+            height: 500px;
+            padding: 75px;
+
+            h2{
+                padding: 50px;
+            }
+        }
+    
+        .odd-card{
+            background-color: $lightened-tertiary;  
+        }
+    
+        .even-card{
+            background-color: $lightened-secondary;
+        }
+    }
+
+    .join-us-btn{
+        max-width: 350px;
+    }
+
+}

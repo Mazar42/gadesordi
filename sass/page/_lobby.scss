@@ -1,0 +1,165 @@
+/* lobby intro */
+
+.sub-nav-container{
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.right-card-container{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.card{
+    margin: auto;
+    border-radius: 2%;
+    padding:10px;
+    box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
+    background-color: #fff;
+}
+
+.even-container{
+    padding: 25px;
+}
+
+.odd-container{
+    background-color: #fff;
+    padding: 25px;
+
+    #tarifs{
+        max-width: 550px;
+        margin-bottom: 50px;
+}
+}
+
+/* Lobby 'Qui sommes-nous ?' */
+
+#qui-sommes-nous{
+    .card{
+        max-width: 550px;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+
+/* Lobby 'déroulement d'une consultation' */
+
+#activities{
+    
+    .session-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $lightened-tertiary;
+    border-radius: 10px;
+    margin: 10px;
+
+        .card{
+            margin-bottom: 15px;
+
+            a{
+                text-decoration: underline $primary-color;
+            }
+        }
+
+        .image-card{
+        margin:auto;
+        max-width: 200px;
+        }
+    }
+
+    h2{
+        padding: 25px;
+    }
+}
+
+/* Join us Page */
+
+.join-us-card{
+    border-radius: 3.5%;
+    margin: 10px 30px 40px 30px;
+    padding: 25px;
+    box-shadow: 5px 5px 5px $tertiary-color;
+}
+
+/* Desktop version */
+
+@media all and (min-width : 950px){
+
+    /* Lobby intro */
+
+    .sub-nav-container{
+        display: flex;
+        justify-content: space-around;
+        margin: 30px;
+        flex-wrap: wrap;
+    }
+
+    .right-card-container{
+        display: flex;
+        justify-content:flex-end;
+    }
+    
+    .card{
+        box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
+        max-width: 75%;
+        background-color: #fff;
+
+        ul{
+            text-align: center;
+        }
+    }
+
+    .tutorial{
+        padding: 70px;
+
+        h2{
+            margin-bottom: 40px;
+        }
+    }
+
+    .first{
+        background-size:cover;
+        background-repeat: no-repeat;
+        height:fit-content; 
+    }
+
+    .odd-container{
+        
+        padding: 25px;
+        background-color: white;
+
+    }
+
+    .even-container{
+        padding: 50px 25px 50px 25px;
+
+        .card{
+            margin: auto;
+            max-width: 600px;
+        }
+    }
+
+    /* Lobby 'déroulement d'une consultation' */
+
+    #activities{
+        .session-card-container{
+            flex-direction: row;
+            background-color: #fff;
+            border-style: none;
+
+            .card{
+                padding: 35px;
+            }
+        }
+
+        .even{
+            flex-direction: row-reverse;
+        }
+    }
+}

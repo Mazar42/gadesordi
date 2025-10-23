@@ -1,0 +1,19 @@
+.nos-centres{
+
+    padding: 25px;
+    
+    .cards-container{
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .card{
+            width: 300px;
+            margin: 25px;
+            text-align: center;
+        }
+    }
+
+    
+}
